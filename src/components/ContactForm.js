@@ -10,15 +10,15 @@ import style from "../styles/button.module.css";
 
 export default function ContactForm() {
   const [name, setName] = useState("");
-  console.log(name);
+  // console.log(name);
   const [number, setNumber] = useState("");
-  console.log(number);
+  // console.log(number);
   const dispatch = useDispatch();
   const contacts = useSelector(getContacts);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    console.log({ name, value });
+    // console.log({ name, value });
     switch (name) {
       case "name":
         setName(value);
@@ -32,7 +32,7 @@ export default function ContactForm() {
   };
 
   const handleSubmit = (e) => {
-    console.log(e);
+    // console.log(e);
     e.preventDefault();
     if (contacts.find((contact) => contact.name === name)) {
       alert(`${name} is already in contacts`);

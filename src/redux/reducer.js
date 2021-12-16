@@ -10,7 +10,7 @@ const INITIAL_CONTACTS_LIST = [
 ];
 
 const contacts = createReducer(INITIAL_CONTACTS_LIST, {
-  [actions.addContact]: (state, { payload }) => [...state, payload.contact],
+  addContactSuccess: (state, { payload }) => [...state, payload.contact],
   [actions.deleteContact]: (state, { payload }) =>
     state.filter(({ id }) => id !== payload),
 });
