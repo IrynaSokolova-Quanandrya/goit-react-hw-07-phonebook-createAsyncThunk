@@ -1,0 +1,16 @@
+.btn {
+  background-color: white; /* Green */
+  border-radius: 5px;
+  border: 1px solid black;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  width: 100px;
+}
+.btn:focus,
+.btn:hover {
+  border: 2px solid grey;
+}
